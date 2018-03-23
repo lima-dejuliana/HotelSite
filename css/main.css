@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-top,
+.navbar{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.navbar-top ul,
+.navbar ul{
+    display: inline-flex;
+}
+
+.navbar-top button{
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #ffac84;
+    color: #ffffff;
+    padding: 0.75em;
+    border: 0;
+}
+
+.navbar-top button:hover{
+    background-color: #ff8a51;
+}
+
+i{
+    margin: 0 0.2em;
+    vertical-align: bottom;
+}
+
+.navbar-contato{
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 16px;
+    padding: 0.75em;
+}
+.navbar-contato a{
+    vertical-align: text-top;
+}
+
+.navbar-contato i{
+    color: #60b99a;
+    font-size: 16pt;
+}
+
+.icon-social{
+    font-size: 26pt;
+    color: #60b99a;
+    padding: 0.2em 0.4em 0.2em 0;
+}
+.icon-social i{
+    vertical-align: text-bottom;
+}
+.navbar-top ul:last-child{
+    padding: 0;
+    margin: 0;
+}
