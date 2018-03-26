@@ -1,5 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+/* container */
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 1170px){
+    .container {
+        max-width:1170px;
+        padding: 0;
+    }
+}
+
+/*linha*/
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display: table;
+}
+
+.row:after{
+    clear: both;
+}
+
+/*colunas*/
+.col,
+.col-2,
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+
+    *zoom: 1;
+    *display: inline;
+}
+
+/*duas colunas*/
+@media (min-width: 480px){
+    .col-2 {
+        width:50%!important;
+    }
+}
+
+/*três colunas*/
+@media (min-width: 728px){
+    .col-1-3{
+        width: 33.3333%!important;
+    }
+    .col-2-3{
+        width: 66.6667%!important;
+    }
+}
+
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Fauna+One');
+
+/**/
 li{
     list-style: none;
 }
@@ -9,65 +87,79 @@ a{
     color: inherit;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-top,
-.navbar{
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.navbar-top ul,
-.navbar ul{
-    display: inline-flex;
-}
-
-.navbar-top button{
-    font-family: 'Cabin', 'Helvitica', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: #ffac84;
-    color: #ffffff;
-    padding: 0.75em;
-    border: 0;
-}
-
-.navbar-top button:hover{
-    background-color: #ff8a51;
-}
-
 i{
     margin: 0 0.2em;
     vertical-align: bottom;
 }
 
-.navbar-contato{
+nav{
+    background: url(../images/suite-casal-clean.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.topo-social,
+.bar-navegacao{
+    display: inline-flex;
+}
+
+.topo-contato{
     font-family: 'Cabin', 'Helvitica', sans-serif;
     font-size: 16px;
     padding: 0.75em;
 }
-.navbar-contato a{
-    vertical-align: text-top;
-}
 
-.navbar-contato i{
+.topo-contato i{
     color: #60b99a;
     font-size: 16pt;
 }
 
-.icon-social{
+.topo-social,
+.bar-navegacao{
+    justify-content: flex-end;
+}
+
+.topo-social li{
     font-size: 26pt;
     color: #60b99a;
-    padding: 0.2em 0.4em 0.2em 0;
+    margin-right: 0.5em;
 }
-.icon-social i{
-    vertical-align: text-bottom;
+.topo-social button{
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #ffac84;
+    color: #ffffff;
+    padding: 0.9em;
+    border: 0;
 }
-.navbar-top ul:last-child{
-    padding: 0;
-    margin: 0;
+
+.topo-social button:hover{
+    background-color: #ff8a51;
+}
+
+.navegacao{
+    background-color: rgba(0, 0, 0, 0.65);
+    width:100%;
+    height: 60px;
+    display: grid;
+}
+
+.bar-navegacao{
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0.9em;
+    justify-content: space-between;
+}
+
+.calendar,
+.bar-navegacao i{
+    vertical-align: text-top;
+}
+
+.teste{
+    background-color: blue;
+    height: 70px;
 }
