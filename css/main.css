@@ -42,7 +42,9 @@
 .col,
 .col-2,
 .col-1-3,
-.col-2-3 {
+.col-2-3,
+.col-40,
+.col-60 {
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
@@ -70,12 +72,14 @@
     .col-2-3{
         width: 66.6667%!important;
     }
+    .col-40{
+        width: 40%;
+    }
+    .col-60{
+        width: 60%;
+    }
 }
 
-
-/*fontes*/
-@import url('https://fonts.googleapis.com/css?family=Cabin');
-@import url('https://fonts.googleapis.com/css?family=Fauna+One');
 
 /**/
 li{
@@ -95,7 +99,7 @@ i{
 nav{
     background: url(../images/suite-casal-clean.jpg) no-repeat center;
     background-size: cover;
-    height: 450px;
+    height: 600px;
 }
 
 .topo-social,
@@ -132,6 +136,7 @@ nav{
     color: #ffffff;
     padding: 0.9em;
     border: 0;
+    vertical-align: text-bottom;
 }
 
 .topo-social button:hover{
@@ -139,7 +144,7 @@ nav{
 }
 
 .navegacao{
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.7);
     width:100%;
     height: 60px;
     display: grid;
@@ -159,7 +164,129 @@ nav{
     vertical-align: text-top;
 }
 
-.teste{
-    background-color: blue;
-    height: 70px;
+.bar-navegacao i{
+    font-size: 18pt;
+}
+
+.wrapper-banner{
+    background-color: rgba(0, 0, 0, 0.50);
+/*    padding: 60px 48px;*/
+    color: #ffffff;
+    height:540px;
+}
+
+.txt-info-home{
+    padding: inherit;
+    text-align: right;
+    padding: 60px 0 60px 60px;
+}
+
+.txt-info-home h2{
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 50px;
+    padding-bottom: 0.2em;
+}
+
+.txt-info-home p{
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    padding: 0.8em 0 0.8em 3em;
+}
+
+.txt-info-home h4{
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 0.5em 0;
+}
+
+.area-busca{
+    margin-right: 16%;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 0.5rem 1rem;
+    height: 540px;
+}
+
+.busca-label{
+    display: block;
+    width: 100%;
+    padding: 1.2em 0.5em 0.3em 1em;
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.busca-input{
+    display: inline-block;
+    width:80%;
+    height: 40px;
+    padding: 0.4em;
+    margin-left: 1rem;
+    border: 0;
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 16px;
+    background-color:rgba(255,255,255, 0.9);
+}
+
+.busca-ico{
+    color: #000000;
+    font-size: 22pt;
+    height: 40px;
+    padding: 0.13em;
+    background-color:rgba(255,255,255, 0.9);
+    margin: 0;
+    border: 0;
+}
+
+.busca-span-qtd{
+    display: block;
+    width:90%;
+    margin: 0.2rem 0 0 1rem;
+    padding: 0.5rem 0;
+}
+
+.busca-ico-qtd{
+    width:50px;
+    border: 0;
+    font-size: 32pt;
+    color: #f2f6aa;
+    text-align: left;
+}
+
+
+.busca-btn-qtd{
+    width:40px;
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    color: rgb(242, 246, 170);
+    border: 0;
+    font-size: 24pt;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.busca-input-qtd{
+    width:50%;
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 28pt;
+    color:rgb(242, 246, 170);
+    background-color:rgba(255,255,255, 0);
+    border:0;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.busca-span-qtd .busca-label{
+    padding: 0.5em 0;
+}
+
+.busca-btn-reserva{
+    width: 90%;
+    text-transform: uppercase;
+    font-family: 'Cabin', 'Helvitica', sans-serif;
+    font-size: 24px;
+    margin: 1rem;
+    padding: 0.5em;
+    color: #ffffff;
+    background-color: #67b699;
+    border: 0;
 }
