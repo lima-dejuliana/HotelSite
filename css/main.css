@@ -560,3 +560,78 @@ nav {
         opacity: 1
     }
 }
+
+.acomodacoes {
+    text-align: center;
+}
+
+.acomodacoes h2 {
+    text-transform: uppercase;
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 2rem 0 0.5rem;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #5fba99;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.thumbs-acomo {
+    display: flex;
+    position: relative;
+    width: 180px;
+    height: 120px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thumbs-acomo:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: #ffffff;
+    width: 90%;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.area-foto-acomo{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    font-family: 'Fauna One', 'Roboto', sans-serif;
+    padding: 3rem 0;
+}
+
+#canvasAcomodacoes{
+    width:100%;
+    height:400px;
+}

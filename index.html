@@ -118,7 +118,41 @@
             </div>
         </section>
         <section class="container acomodacoes" id="acomodacoes">
-            <h2>acomodacoes</h2>
+            <h2>Acomodações</h2>
+            <div class="square-acomo">
+                <span class="square"></span>
+                <span class="square"></span>
+                <span class="square"></span>
+            </div>
+            <div class="area-foto-acomo">
+                <div class="thumbs-acomo">
+                    <img src="images/thumb-suite-casal-clean.jpg" alt="Suíte Casal" class="image">
+                    <div class="overlay" onclick="currentThumb(1)">
+                        <div class="text">Suíte Casal</div>
+                    </div>
+                </div>
+                <div class="thumbs-acomo">
+                    <img src="images/thumb-suite-single.jpg" alt="Suíte Solteiro" class="image">
+                    <div class="overlay" onclick="currentThumb(2)">
+                        <div class="text">Suíte Solteiro</div>
+                    </div>
+                </div>
+                <div class="thumbs-acomo">
+                    <img src="images/thumb-table.jpg" alt="Restaurante" class="image">
+                    <div class="overlay" onclick="currentThumb(3)">
+                        <div class="text">Restaurante</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="col-2">
+                <canvas id="canvasAcomodacoes">
+
+                </canvas>
+            </div>
+            <div class="col-2">
+            </div>
+            </div>
         </section>
         <section class="promocaomes" id="promocoes">
             <div class="banner-promocaomes">
@@ -132,7 +166,6 @@
 
         </section>
         <section class="container depoimentos">
-
             <div class="slides-depo fade">
                 <img src="images/depo1.jpg">
                 <h4>Carla Alves</h4>
@@ -203,4 +236,5 @@
     </footer>
 </body>
 <script type="text/javascript" src="js/slide-depoimentos.js"></script>
+
 </html>
