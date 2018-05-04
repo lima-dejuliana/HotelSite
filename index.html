@@ -126,33 +126,78 @@
             </div>
             <div class="area-foto-acomo">
                 <div class="thumbs-acomo">
-                    <img src="images/thumb-suite-casal-clean.jpg" alt="Suíte Casal" class="image">
+                    <img src="images/acomodacoes/thumb-suite-casal-clean.jpg" alt="Suíte Casal" class="image">
                     <div class="overlay" onclick="currentThumb(1)">
                         <div class="text">Suíte Casal</div>
                     </div>
                 </div>
                 <div class="thumbs-acomo">
-                    <img src="images/thumb-suite-single.jpg" alt="Suíte Solteiro" class="image">
+                    <img src="images/acomodacoes/thumb-suite-single.jpg" alt="Suíte Solteiro" class="image">
                     <div class="overlay" onclick="currentThumb(2)">
                         <div class="text">Suíte Solteiro</div>
                     </div>
                 </div>
                 <div class="thumbs-acomo">
-                    <img src="images/thumb-table.jpg" alt="Restaurante" class="image">
+                    <img src="images/acomodacoes/thumb-table.jpg" alt="Restaurante" class="image">
                     <div class="overlay" onclick="currentThumb(3)">
                         <div class="text">Restaurante</div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-            <div class="col-2">
-                <canvas id="canvasAcomodacoes">
 
-                </canvas>
-            </div>
             <div class="col-2">
+                <div class="galeria">
+                    <img src="images/suite-casal-clean.jpg">
+                </div>
+                <div class="galeria">
+                    <img src="images/suite-single.jpg">
+                </div>
+                <div class="galeria">
+                    <img src="images/table-3084384_640.jpg">
+                </div>
             </div>
+
+            <div class="col-2 galeria-acomodacoes">
+                <div id="divSlideUm">
+                    <h3>Suíte Casal</h3>
+                    <p>Aenean neque elit, bibendum sed commodo nec, rutrum eu velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button>Buscar</button>
+                    <div class="slidePrimeiro">
+                        <img src="images/acomodacoes/quarto_casal_um_original.jpg">
+                    </div>
+                    <div class="slidePrimeiro">
+                        <img src="images/acomodacoes/quarto_casal_dois_original.jpg">
+                    </div>
+                    <div class="slidePrimeiro">
+                        <img src="images/acomodacoes/quarto-de-casal-tres-original.png">
+                    </div>
+                </div>
+
+                <div id="divSlideDois">
+                    <h3>Suíte Solteiro</h3>
+                    <p>Aenean neque elit, bibendum sed commodo nec, rutrum eu velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button>Buscar</button>
+                    <div class="slideSegundo">
+                        <img src="img_sl2_praia_wide.png" style="width:80%">
+                    </div>
+                    <div class="slideSegundo">
+                        <img src="img_sl2_lago_wide.jpg" style="width:80%">
+                    </div>
+                </div>
+
+                <div id="divSlideTres">
+                    <h3>Restaurante</h3>
+                    <p>Aenean neque elit, bibendum sed commodo nec, rutrum eu velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button>Buscar</button>
+                    <div class="slideTerceiro">
+                        <img src="img_sl3_outono_wide.jpg" style="width:80%">
+                    </div>
+                    <div class="slideTerceiro">
+                        <img src="img_sl3_fall_wide.jpg" style="width:80%">
+                    </div>
+                </div>
             </div>
+
         </section>
         <section class="promocaomes" id="promocoes">
             <div class="banner-promocaomes">
@@ -167,22 +212,22 @@
         </section>
         <section class="container depoimentos">
             <div class="slides-depo fade">
-                <img src="images/depo1.jpg">
+                <img src="images/depoimentos/depo1.jpg">
                 <h4>Carla Alves</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus maximus. Duis molestie metus neque, eget porttitor massa venenatis quis.</p>
             </div>
             <div class="slides-depo fade">
-                <img src="images/depo2.jpg">
+                <img src="images/depoimentos/depo2.jpg">
                 <h4>Jonathan Souza</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus maximus. Duis molestie metus neque, eget porttitor massa venenatis quis.</p>
             </div>
             <div class="slides-depo fade">
-                <img src="images/depo3.jpg">
+                <img src="images/depoimentos/depo3.jpg">
                 <h4>Carlos Guedes</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus maximus. Duis molestie metus neque, eget porttitor massa venenatis quis.</p>
             </div>
             <div class="slides-depo fade">
-                <img src="images/depo4.jpg">
+                <img src="images/depoimentos/depo4.jpg">
                 <h4>Roberta Santos</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus maximus. Duis molestie metus neque, eget porttitor massa venenatis quis.</p>
             </div>
@@ -236,5 +281,6 @@
     </footer>
 </body>
 <script type="text/javascript" src="js/slide-depoimentos.js"></script>
+<script type="text/javascript" src="js/slide-galeria.js"></script>
 
 </html>
