@@ -20,11 +20,12 @@ function allOculto() {
 
 function mudarEstado() {
     var display = slideDisplay.style.display;
-    if (display == "none")
+    if (display == "none"){
         slideDisplay.style.display = 'block';
-    else
+    }else{
         slideDisplay.style.display = 'none';
-}
+    }
+    }
 
 function escolherSlide(n) {
     allOculto();
@@ -67,5 +68,5 @@ function showSlide(n) {
         slideId = 1
     }
     slide[slideId - 1].style.display = "block";
-    setTimeout(showSlide, 3000);
+    setTimeout(showSlide, 4000);
 }

@@ -58,17 +58,23 @@
                             <label class="busca-label">Qtd. Adultos e Crianças</label>
                             <span class="busca-span-qtd">
                                 <i class="fa busca-ico-qtd">&#xF183;</i>
-                                <button class="busca-btn-qtd">-</button><input class="busca-input-qtd" type="number" name="Adultos" min="1" max="8"><button class="busca-btn-qtd">+</button>
+                                <button class="busca-btn-qtd" onclick="countMenor()">-</button>
+                                <input class="busca-input-qtd" type="text" name="Adultos" id="adultos" value=1>
+                                <button class="busca-btn-qtd" onclick="countMaior()">+</button>
                             </span>
                         <span class="busca-span-qtd">
                                 <i class="fa busca-ico-qtd">&#xF1AE;</i>
-                                <button class="busca-btn-qtd">-</button><input class="busca-input-qtd" type="number" name="Criancas" min="1" max="5"><button class="busca-btn-qtd">+</button>
+                                <button class="busca-btn-qtd" onclick="countMenorCriancas()">-</button>
+                                <input class="busca-input-qtd" type="text" name="Criancas" id="criancas" value=0>
+                                <button class="busca-btn-qtd" onclick="countMaiorCriancas()">+</button>
                             </span>
                         </span>
                         <span class="busca-span-qtd">
                             <label class="busca-label">Qtd. Quartos</label>
                             <i class="fa busca-ico-qtd">&#xF236;</i>
-                            <button class="busca-btn-qtd">-</button><input class="busca-input-qtd" type="number" name="Quartos" min="1" max="8"><button class="busca-btn-qtd">-</button>
+                            <button class="busca-btn-qtd" onclick="countMenorQuartos()">-</button>
+                            <input class="busca-input-qtd" type="text" name="Quartos" id="quartos" value="1">
+                            <button class="busca-btn-qtd" onclick="countMaiorQuartos()">+</button>
                         </span>
                         <button class="busca-btn-reserva">Reservar</button>
                     </div>
@@ -130,19 +136,19 @@
             <div class="area-foto-acomo">
                 <div class="thumbs-acomo">
                     <img src="images/acomodacoes/thumb-suite-casal-clean.jpg" alt="Suíte Casal" class="image">
-                    <div class="overlay" onclick="currentThumb(1)">
+                    <div class="overlay" onclick="currentThumb(1), pauseSlide">
                         <div class="text">Suíte Casal</div>
                     </div>
                 </div>
                 <div class="thumbs-acomo">
                     <img src="images/acomodacoes/thumb-suite-single.jpg" alt="Suíte Solteiro" class="image">
-                    <div class="overlay" onclick="currentThumb(2)">
+                    <div class="overlay" onclick="currentThumb(2), pauseSlide">
                         <div class="text">Suíte Solteiro</div>
                     </div>
                 </div>
                 <div class="thumbs-acomo">
                     <img src="images/acomodacoes/thumb-table.jpg" alt="Restaurante" class="image">
-                    <div class="overlay" onclick="currentThumb(3)">
+                    <div class="overlay" onclick="currentThumb(3), pauseSlide">
                         <div class="text">Restaurante</div>
                     </div>
                 </div>
@@ -291,5 +297,6 @@
 </body>
 <script type="text/javascript" src="js/slide-depoimentos.js"></script>
 <script type="text/javascript" src="js/slide-galeria.js"></script>
+<script type="text/javascript" src="js/area-reserva.js"></script>
 
 </html>
